@@ -1,8 +1,8 @@
 # Hi, I'm Yingchao Li 👋
 
-**M.Sc. Data Science @ FAU · Computer Vision · Software Engineering · Embedded AI**
+**M.Sc. Data Science @ FAU · Applied AI · Mathematical Optimization · Scientific Computing · Computer Vision**
 
-Based in Nürnberg, Germany, I connect computer vision, machine learning and software engineering to turn ideas into working systems. I enjoy building the whole pipeline—from experiments and evaluation to interfaces, APIs and hardware integration.
+Based in Nürnberg, Germany, I work across machine learning, computer vision, mathematical optimization and software engineering. I enjoy transferring computational methods across different domains and building complete systems—from mathematical modelling and algorithm implementation to numerical experiments, evaluation, interfaces and hardware integration.
 
 [Portfolio](https://yingchao-li.github.io/) · [CV](https://yingchao-li.github.io/assets/Yingchao-Li-CV.pdf) · [LinkedIn](https://www.linkedin.com/in/yingchao-li-722071397/) · [Email](mailto:yingchao.li@fau.de)
 
@@ -10,30 +10,53 @@ Based in Nürnberg, Germany, I connect computer vision, machine learning and sof
 
 - Pursuing an **M.Sc. in Data Science** at Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU).
 - Background in **Computer Science and Technology** at China University of Geosciences (Wuhan).
-- Interested in **computer vision, AI applications and hardware–software integration**.
-- I like understanding why models work—and turning them into useful applications and devices.
+- Interested in **applied machine learning, computer vision, mathematical optimization and scientific computing**, with recent projects exploring quantum error correction.
+- I enjoy connecting mathematical principles with practical implementations and evaluating solutions through reproducible experiments.
 
 ## Technology stack
 
 | Area | Technologies & interests |
 | --- | --- |
-| AI & computer vision | PyTorch, scikit-learn, OpenCV; object detection, image restoration, feature extraction |
-| Web applications | Python, JavaScript, React, FastAPI, REST APIs, SSE, Gradio |
-| Data & retrieval | NumPy, pandas, SQL, SQLite, FAISS, RAG, Streamlit |
+| AI & computer vision | PyTorch, scikit-learn, OpenCV, CNNs, GRUs, Transformers; object detection, image restoration, feature extraction |
+| Mathematical optimization | SciPy, HiGHS, OR-Tools; LP, MILP, CP-SAT, genetic algorithms, simulated annealing |
+| Quantum computing | Stim, PyMatching; quantum error correction, surface codes, MWPM, neural decoding |
+| Scientific computing & data | Python, NumPy, pandas, SQL, SQLite, Plotly; numerical benchmarking and statistical evaluation |
+| AI applications & web | JavaScript, React, FastAPI, REST APIs, SSE, Gradio, Streamlit, FAISS, Agentic RAG |
 | Embedded systems | C / C++, ESP32-S3, FreeRTOS, ESP-DL, camera interfacing, GPIO |
 | Development & testing | Git, pytest |
 
 ## Selected projects
 
-### [CVKit — Computer Vision Tool Platform](https://github.com/yingchao-li/CV-Tool-Platform)
+### [AdaptiveQEC — Deep Learning for Fault-Tolerant Quantum Computing](https://github.com/yingchao-li/AdaptiveQEC-Deep-Learning-for-FTQC)
 
-A modular vision toolkit covering **3D geometry, RAW / HDR imaging, image retrieval, object detection and face analysis**, exposed through one Python package, a unified CLI and a Streamlit studio.
+A surface-code decoding framework for **quantum error correction**, combining classical and neural decoders with experimental data from Google's Willow quantum processor.
+
+- Five neural decoder architectures (MLP, ResMLP, 3D CNN, GRU and Transformer), benchmarked against classical MWPM decoding across 30 training experiments.
+- **20.79% relative reduction in logical error rate (9.07% → 7.18%)** with the Transformer decoder on 90,000 distance-3, 10-round test samples.
+- Confidence-aware hybrid decoding combining neural predictions, probability calibration and adaptive MWPM routing.
+
+**Stack:** Python · PyTorch · Stim · PyMatching · NumPy
+
+### [OptiFactory — Mathematical Optimization for Industrial Production & Machine Scheduling](https://github.com/yingchao-li/OptiFactory-Mathematical-Optimization)
+
+A mathematical optimization framework for **job shop and flexible job shop scheduling (JSSP/FJSP)**, supporting numerical benchmarking and interactive schedule visualization.
+
+- LP relaxation, MILP (Big-M), CP-SAT, genetic algorithms and simulated annealing; 492 successfully parsed benchmark instances.
+- Heuristic-guided hybrid optimization (HGMO) improved feasible-solution coverage from **85.7% to 100%** and proven-optimal coverage from **71.4% to 85.7%**, relative to standard CP-SAT across seven instances under identical two-second configured budgets.
+- A separate CP-SAT warm-start strategy achieved a **2.87× geometric-mean speedup** across five matched, proven-optimal benchmark pairs.
+- 70 algorithm–instance evaluations; all 59 returned schedules passed independent constraint validation.
+
+**Stack:** Python · SciPy · HiGHS · OR-Tools · NumPy · pandas · Streamlit
+
+### [CVKit — Computer Vision & Algorithm Benchmarking Platform](https://github.com/yingchao-li/CV-Tool-Platform)
+
+A modular vision toolkit covering **3D geometry, RAW / HDR imaging, image retrieval, object detection and face analysis**, exposed through one Python package, a unified CLI and a Streamlit studio. Developed as a **10-ECTS project at FAU (grade: 1.0)**.
 
 - Robust plane fitting with RANSAC, MLESAC and Preemptive RANSAC, followed by PCA-based 3D box measurement.
 - RAW demosaicing, camera-response calibration and HDR tone mapping; image retrieval with RootSIFT → VLAD → Exemplar SVM.
 - Selective Search + HOG / SVM detection, open-set face recognition and unknown-identity rejection, with reproducible benchmarks.
 
-**Stack:** Python · Streamlit · OpenCV · scikit-learn
+**Stack:** Python · Streamlit · Gradio · OpenCV · scikit-learn
 
 ### [EV Reservation & Smart Parking Lock](https://github.com/yingchao-li/ev-charging-reservation-v2)
 
@@ -82,6 +105,10 @@ The original ECURIOUS API is a fictional hackathon mock; charging and revenue fi
 
 ## Research
 
+**Master's thesis research direction: Small-object detection**
+
+Exploring multi-scale feature representations and coarse-to-fine region refinement for small-object detection. Ongoing research; experimental findings are subject to further validation.
+
 **Bachelor's thesis: Prior-enhanced image restoration** · December 2024 – June 2025
 
 Designed **PriAda-U-Net for dehazing** and **GRS-U-Net for deraining**, integrating dark-channel and gradient-map priors. Evaluated adaptive loss weighting through comparative experiments and ablation studies.
@@ -100,7 +127,7 @@ During my internship, I independently developed and deployed a **WeChat Mini Pro
 
 ## Get in touch
 
-Happy to talk about computer vision, AI applications and software development.
+Happy to talk about applied AI, scientific computing, mathematical optimization, computer vision and software development.
 
 - **Email:** [yingchao.li@fau.de](mailto:yingchao.li@fau.de)
 - **Portfolio:** [yingchao-li.github.io](https://yingchao-li.github.io/)
