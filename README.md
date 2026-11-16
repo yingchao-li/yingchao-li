@@ -16,22 +16,13 @@ I enjoy transferring computational methods across different engineering domains 
 - Exploring interdisciplinary applications in quantum computing, electroacoustics, embedded intelligence and engineering automation.
 - Passionate about connecting mathematical principles with practical implementations, reproducible experiments and reliable software systems.
 
-## Technology Stack
+## Technical Focus
 
-| Area | Technologies & interests |
-| --- | --- |
-| Programming | Python, C, C++17, MATLAB, JavaScript, TypeScript, SQL |
-| Machine Learning & Computer Vision | PyTorch, scikit-learn, OpenCV, CNNs, GRUs, Transformers, YOLO, object detection, image restoration |
-| Mathematical Optimization | SciPy, HiGHS, OR-Tools, LP, MILP, CP-SAT, genetic algorithms, simulated annealing |
-| Scientific Computing | NumPy, SciPy, pandas, MATLAB, numerical modelling, statistical analysis, reproducible benchmarking |
-| Digital Signal Processing | FFT, STFT, Welch PSD, FIR/IIR filters, frequency response, RMS, SNR, THD, acoustic measurements |
-| Quantum Computing | Stim, PyMatching, surface codes, quantum error correction, MWPM, neural decoding |
-| Industrial Software | C++17, CMake, SCPI/TCP, virtual instruments, measurement automation, firmware regression testing |
-| AI Applications | LLMs, Agentic RAG, FAISS, prompt engineering, workflow automation |
-| Full-Stack Development | React, TypeScript, Vite, Tailwind CSS, FastAPI, REST APIs, SSE, SQLite |
-| Data Visualization | Recharts, Plotly, Matplotlib, Streamlit, Gradio |
-| Embedded Systems | C/C++, ESP32-S3, FreeRTOS, ESP-DL, camera interfacing, GPIO |
-| Software Quality | Git, Pytest, Catch2, Vitest, Playwright, ASan, UBSan, GitHub Actions |
+- **Applied AI & Computer Vision** — Machine learning, deep learning and image processing.
+- **Scientific Computing & Optimization** — Numerical methods, mathematical modelling and signal processing.
+- **Engineering Software** — Full-stack development, embedded systems and automated testing.
+
+**Core tools:** Python · C/C++ · PyTorch · OpenCV · NumPy · SciPy · React · Git
 
 ## Selected Projects
 
